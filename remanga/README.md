@@ -13,3 +13,13 @@ Mobile app for [ReManga portal](https://remanga.org), adopted for mobile designs
 - SQFLite
 - Cached Image 
 - http, graphql_flutter (?)
+
+## Commands
+    //Get dependencies
+    flutter pub get
+
+    //Run codegen for DI
+    flutter packages pub run build_runner build
+    
+    //Run app
+    flutter run

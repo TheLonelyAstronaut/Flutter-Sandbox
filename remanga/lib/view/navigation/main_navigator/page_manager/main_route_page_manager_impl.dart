@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 import 'package:provider/provider.dart';
+import 'package:remanga/di/dependency_injection_root.dart';
 import 'package:remanga/view/home/home_screen.dart';
 import 'package:remanga/view/navigation/global_navigation_configuration.dart';
+import 'package:remanga/view/navigation/global_navigator/page_manager/global_route_page_manager.dart';
 import 'package:remanga/view/settings/settings_screen.dart';
 import 'package:remanga/view/user/user_screen.dart';
 
 import 'main_route_page_manager.dart';
 
+@LazySingleton(as: MainRoutePageManager)
 class MainRoutePageManagerImpl extends ChangeNotifier
     implements MainRoutePageManager {
   static MainRoutePageManager of(BuildContext context) {
@@ -73,5 +77,9 @@ class MainRoutePageManagerImpl extends ChangeNotifier
 
   void openHome() {
     setNewRoutePath(GlobalNavigationConfiguration.home());
+  }
+
+  void openTitleDescription() {
+    setNewRoutePath(GlobalNavigationConfiguration.titleDescription());
   }
 }

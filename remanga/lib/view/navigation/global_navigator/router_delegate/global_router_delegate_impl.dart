@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 import 'package:provider/provider.dart';
 import 'package:remanga/view/navigation/global_navigator/page_manager/global_route_page_manager.dart';
 
 import '../../global_navigation_configuration.dart';
 import 'global_router_deleagte.dart';
 
+@LazySingleton(as: GlobalRouterDelegate)
 class GlobalRouterDelegateImpl
     extends RouterDelegate<GlobalNavigationConfiguration>
     with

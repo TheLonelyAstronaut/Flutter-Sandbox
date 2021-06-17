@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:remanga/view/navigation/global_navigator/page_manager/global_route_page_manager_impl.dart';
 
 class SlideFromBottomPage<T> extends Page<T> {
   final Widget child;

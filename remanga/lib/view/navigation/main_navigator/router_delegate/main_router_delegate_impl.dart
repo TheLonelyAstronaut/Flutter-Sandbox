@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 import 'package:provider/provider.dart';
 import 'package:remanga/view/navigation/main_navigator/page_manager/main_route_page_manager.dart';
 import 'package:remanga/view/navigation/transitions/no_animation_transition_delegate.dart';
@@ -6,6 +7,7 @@ import 'package:remanga/view/navigation/transitions/no_animation_transition_dele
 import '../../global_navigation_configuration.dart';
 import 'main_router_delegate.dart';
 
+@LazySingleton(as: MainRouterDelegate)
 class MainRouterDelegateImpl
     extends RouterDelegate<GlobalNavigationConfiguration>
     with

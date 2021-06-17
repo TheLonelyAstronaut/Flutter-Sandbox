@@ -11,4 +11,6 @@ abstract class GlobalRoutePageManager extends ChangeNotifier {
   void openMain();
   void openUnknown();
   void openLogin();
+  void openReader();
+  void openTitleDescription();
 }

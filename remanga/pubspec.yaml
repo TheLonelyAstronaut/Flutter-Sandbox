@@ -25,6 +25,8 @@ dependencies:
     sdk: flutter
   gap: ^1.2.0
   provider: 5.0.0
+  injectable: 1.4.1
+  get_it: 7.1.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -32,8 +34,8 @@ dependencies:
   cupertino_icons: ^1.0.2
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  injectable_generator: 1.4.1
+  build_runner: 2.0.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

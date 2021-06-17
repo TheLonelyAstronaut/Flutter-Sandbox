@@ -55,7 +55,14 @@ class MainNavigator extends StatelessWidget {
                   GlobalRoutePageManagerImpl.of(context).openLogin();
 
                   Navigator.of(context).pop();
-                })
+                }),
+            ListTile(
+                title: Text('TitleDescription'),
+                onTap: () {
+                  GlobalRoutePageManagerImpl.of(context).openTitleDescription();
+
+                  Navigator.of(context).pop();
+                }),
           ],
         ),
       ),

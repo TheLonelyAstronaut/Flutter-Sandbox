@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:injectable/injectable.dart';
 
 import '../../global_navigation_configuration.dart';
 import 'global_route_information_parser.dart';
 
+@LazySingleton(as: GlobalRouteInformationParser)
 class GlobalRouteInformationParserImpl
     extends RouteInformationParser<GlobalNavigationConfiguration>
     implements GlobalRouteInformationParser {
@@ -28,6 +30,14 @@ class GlobalRouteInformationParserImpl
 
     if (configuration.isLogin) {
       return RouteInformation(location: '/login');
+    }
+
+    if (configuration.isTitleDescription) {
+      return RouteInformation(location: '/titleDescription');
+    }
+
+    if (configuration.isReader) {
+      return RouteInformation(location: '/reader');
     }
 
     return RouteInformation(location: '/404');
