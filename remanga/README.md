@@ -19,7 +19,7 @@ Mobile app for [ReManga portal](https://remanga.org), adopted for mobile designs
     flutter pub get
 
     //Run codegen for DI
-    flutter packages pub run build_runner build
+    flutter packages pub run build_runner build --delete-conflicting-outputs
     
     //Run app
     flutter run

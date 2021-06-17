@@ -7,6 +7,10 @@
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 
+import '../bloc/title_list_bloc/title_list_bloc.dart' as _i13;
+import '../model/repositories/title_repository/title_repository.dart' as _i14;
+import '../model/repositories/title_repository/title_repository_impl.dart'
+    as _i15;
 import '../view/navigation/global_navigator/page_manager/global_route_page_manager.dart'
     as _i5;
 import '../view/navigation/global_navigator/page_manager/global_route_page_manager_impl.dart'
@@ -43,5 +47,8 @@ _i1.GetIt $initGetIt(_i1.GetIt get,
       () => _i10.MainRoutePageManagerImpl());
   gh.lazySingleton<_i11.MainRouterDelegate>(
       () => _i12.MainRouterDelegateImpl(get<_i9.MainRoutePageManager>()));
+  gh.factory<_i13.TitleListBloc>(
+      () => _i13.TitleListBloc(get<_i14.TitleRepository>()));
+  gh.singleton<_i14.TitleRepository>(_i15.TitleRepositoryImpl());
   return get;
 }
