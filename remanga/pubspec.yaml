@@ -35,6 +35,7 @@ dependencies:
   cached_network_image: ^3.0.0
   sqflite: ^2.0.0+3
   rx_bloc: ^3.0.0
+  http: ^0.13.3
 
 dev_dependencies:
   injectable_generator: 1.4.1
