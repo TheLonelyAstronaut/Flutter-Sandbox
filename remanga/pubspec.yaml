@@ -27,15 +27,13 @@ dependencies:
   provider: 5.0.0
   injectable: 1.4.1
   get_it: 7.1.4
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   cached_network_image: ^3.0.0
   sqflite: ^2.0.0+3
   rx_bloc: ^3.0.0
   http: ^0.13.3
+  fluro: ^2.0.3
+  font_awesome_flutter: ^9.1.0
 
 dev_dependencies:
   injectable_generator: 1.4.1
