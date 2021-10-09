@@ -1,5 +1,7 @@
 # ReManga Demo App
 
+# Attention: moved to [separate directory](https://github.com/TheLonelyAstronaut/ReManga)
+
 Mobile app for [ReManga portal](https://remanga.org), adopted for mobile designs and best practices. For now using fake data.
 
 ## Key Technologies Stack
